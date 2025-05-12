@@ -81,7 +81,7 @@ export default function Hero() {
             taste buds to an unforgettable experience!
           </BottomText>
           <a href="#">
-            <Arrow src="./images/hero/arrow.svg" alt="arrow" />
+            <Arrow src="/images/hero/arrow.svg" alt="arrow" />
           </a>
         </div>
       </div>

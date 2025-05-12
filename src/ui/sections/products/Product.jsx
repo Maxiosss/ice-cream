@@ -51,7 +51,7 @@ export default function Product({ title, img, variant, children, isFirst }) {
         <a href="#">
           <img
             className={`${styles.arrow} ${isFirst ? styles.firstArrow : ""}`}
-            src="./images/products/arrow.svg"
+            src="/images/products/arrow.svg"
             alt="arrow"
           />
         </a>

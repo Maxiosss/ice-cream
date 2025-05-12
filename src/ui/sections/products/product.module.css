@@ -1,0 +1,20 @@
+.round{
+    width: 302px;
+height: 302px;
+border-radius: 100%;
+box-shadow: 0 8px 30px 0 rgba(22, 28, 22, 0.25);
+position: absolute;
+top: -180px;
+left: 36px;
+}
+.img{
+    composes: round;
+    top: -196px;
+}
+.arrow{
+      display: block;
+  margin: 0 auto;
+}
+.firstArrow{
+    margin-top: 53px;
+}

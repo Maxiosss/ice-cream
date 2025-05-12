@@ -25,9 +25,9 @@ export default function Header() {
         <Button arrow={true} variant="primary">
           Buy now
         </Button>
-        <Button arrow={true} variant="outline">
+        {/* <Button arrow={true} variant="outline">
           Buy now
-        </Button>
+        </Button> */}
       </div>
     </header>
   );

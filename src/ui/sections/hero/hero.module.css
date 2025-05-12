@@ -1,0 +1,31 @@
+.hero {
+  padding: 45px 0 332px;
+  background-image:  url(../../../../public/images/hero/back.png),
+  url(../../../../public/images/hero/ice.png),
+  url(../../../../public/images/hero/desktop.png);
+  background-repeat: no-repeat;
+  background-size: 1200px auto, 225px 225px, 456px 560px;
+  background-position: bottom 0 left 0, bottom 65px left 0, bottom 0 right calc(50% - 312px);
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  align-items: center;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+    margin-left: auto;
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.heroContent {
+    position: absolute;
+    bottom: -250px;
+    left: 260px;
+  }

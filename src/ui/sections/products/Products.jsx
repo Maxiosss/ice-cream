@@ -29,38 +29,26 @@ const ProductSection = styled.section`
   background-image: url("/images/products/productsback.png");
   background-repeat: no-repeat;
 `;
-export default function Products() {
+export default function Products({ data }) {
   return (
     <ProductSection>
-        <ProductsSubTitle>100% natural</ProductsSubTitle>
-        <ProductsTitle>products</ProductsTitle>
-        <ProductsInnerContainer>
-          <Product
-            title={"ice cream"}
-            img={"/images/products/ice.png"}
-          variant={"#AEC6A5"}
-          isFirst = {true}
-          >
-            Soft ice cream with a delicate taste. Made with milk, cream, sugar
-            and natural stabilizer
-          </Product>
-          <Product
-            title={"ice coffee"}
-            img={"/images/products/coffee.png"}
-            variant={"#EFD478"}
-          >
-            Fragrant invigorating drink created from 100% natural ingredients
-            without the use of preservatives and flavor enhancers
-          </Product>
-          <Product
-            title={"milkshakes"}
-            img={"/images/products/milkshake.png"}
-            variant={"#D6936D"}
-          >
-            Sweet drinks based on milk and ice cream, supplemented with syrups,
-            fruits, berries and other sweets of your choice
-          </Product>
-        </ProductsInnerContainer>
+      <ProductsSubTitle>100% natural</ProductsSubTitle>
+      <ProductsTitle>products</ProductsTitle>
+      <ProductsInnerContainer>
+        {data.map((item, index) => {
+          const { id, title, description, image, variant } = item;
+          return (
+            <Product
+              key={id}
+              title={title}
+              description={description}
+              img={image}
+              variant={variant}
+              isFirst={index === 0}
+            />
+          );
+        })}
+      </ProductsInnerContainer>
     </ProductSection>
   );
 }

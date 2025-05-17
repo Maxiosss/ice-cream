@@ -1,0 +1,88 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal {
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  background: #fcfcfc;
+  padding: 32px 0;
+  width: 568px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: #131313;
+  text-align: center;
+  font-family: "Seymour One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 103px;
+}
+
+.cardsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 26px;
+  border-radius: 15px;
+  border: 2px solid #96af8c;
+  box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
+  height: 135px;
+  width: 132px;
+  position: relative;
+}
+
+.cardImg {
+  width: 132px;
+  height: 132px;
+  border-radius: 98px;
+  position: absolute;
+  bottom: 66px;
+  left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.card:nth-child(2) {
+  border: 2px solid #efd478;
+  background: #efd478;
+}
+
+.itemTitle {
+  color: #131313;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  margin-top: 95px;
+}
+.close{
+    width: 13px;
+    height: 13px;
+}
+.closeBtn{
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: none;
+    top: 12px;
+    right: 12px;
+}

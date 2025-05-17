@@ -33,21 +33,19 @@ const ProductDescription = styled.p`
   margin-top: 66px;
   margin-bottom: 50px;
 `;
-const Arrow = styled.img`
-  display: block;
-  margin: 0 auto;
-`;
-export default function Product({ title, img, variant, children, isFirst }) {
+export default function Product({ title, img, variant, description, isFirst }) {
   return (
     <ProductContainer style={{ backgroundColor: `${variant}` }}>
       <div
         className={styles.round}
-        style={{ backgroundColor: `${variant}` }}
+        style={{
+          backgroundColor: `${variant}`
+        }}
       ></div>
       <img className={styles.img} src={img} alt={title} />
       <ProductInnerContainer>
         <ProductTitle>{title}</ProductTitle>
-        <ProductDescription>{children}</ProductDescription>
+        <ProductDescription>{description}</ProductDescription>
         <a href="#">
           <img
             className={`${styles.arrow} ${isFirst ? styles.firstArrow : ""}`}

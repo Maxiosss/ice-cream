@@ -13,7 +13,7 @@ class ModalBase extends Component {
             <button className={styles.closeBtn} onClick={handleModal}>
               <img
                 className={styles.close}
-                src="/images/Vector.png"
+                src="/images/vector.png"
                 alt="close"
               />
             </button>

@@ -18,3 +18,7 @@ left: 36px;
 .firstArrow{
     margin-top: 53px;
 }
+.button{
+    border: none;
+    background-color: transparent;
+}

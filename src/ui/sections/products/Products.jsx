@@ -29,21 +29,19 @@ const ProductSection = styled.section`
   background-image: url("/images/products/productsback.png");
   background-repeat: no-repeat;
 `;
-export default function Products({ data }) {
+export default function Products({ data,handleModal,selectedProduct }) {
   return (
     <ProductSection>
       <ProductsSubTitle>100% natural</ProductsSubTitle>
       <ProductsTitle>products</ProductsTitle>
       <ProductsInnerContainer>
         {data.map((item, index) => {
-          const { id, title, description, image, variant } = item;
           return (
             <Product
-              key={id}
-              title={title}
-              description={description}
-              img={image}
-              variant={variant}
+              key={index}
+              productData={item}
+              selectedProduct={selectedProduct}
+              handleModal={handleModal}
               isFirst={index === 0}
             />
           );

@@ -5,6 +5,7 @@ export default function Button({
   arrow = false,
   type = "button",
   link = "",
+  onClick = () => {}
 }) {
   return (
     <>
@@ -14,7 +15,7 @@ export default function Button({
           {children}{" "}
         </a>
       ) : (
-        <button type={type} className={styles[variant]}>
+        <button type={type} className={styles[variant]} onClick={onClick}>
           {children}
           {arrow && (
             <svg

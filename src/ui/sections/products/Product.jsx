@@ -33,26 +33,40 @@ const ProductDescription = styled.p`
   margin-top: 66px;
   margin-bottom: 50px;
 `;
-export default function Product({ title, img, variant, description, isFirst }) {
+export default function Product({
+  isFirst,
+  handleModal,
+  selectedProduct,
+  productData,
+}) {
+  const handleClick = () => {
+    selectedProduct(productData);
+    handleModal();
+  };
+  const { title, description, image, variant } = productData;
+
   return (
-    <ProductContainer style={{ backgroundColor: `${variant}` }}>
+    <ProductContainer
+      onClick={handleClick}
+      style={{ backgroundColor: `${variant}` }}
+    >
       <div
         className={styles.round}
         style={{
-          backgroundColor: `${variant}`
+          backgroundColor: `${variant}`,
         }}
       ></div>
-      <img className={styles.img} src={img} alt={title} />
+      <img className={styles.img} src={image} alt={title} />
       <ProductInnerContainer>
         <ProductTitle>{title}</ProductTitle>
         <ProductDescription>{description}</ProductDescription>
-        <a href="#">
+        <button type="submit" href="#" className={styles.button}>
           <img
             className={`${styles.arrow} ${isFirst ? styles.firstArrow : ""}`}
             src="/images/products/arrow.svg"
             alt="arrow"
           />
-        </a>
+        </button>
       </ProductInnerContainer>
     </ProductContainer>
   );

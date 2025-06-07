@@ -8,20 +8,42 @@ import { Component } from "react";
 class App extends Component {
   state = {
     isModalOpen: false,
+    productData: null,
   };
   handleModalOpen = () => {
-    this.setState((prevState) => ({
-      isModalOpen: !prevState.isModalOpen,
+    console.log("click");
+    this.setState(() => ({
+      isModalOpen: true,
+    }));
+  };
+  selectedProduct = (product) => {
+    this.setState(() => ({
+      productData: product,
+    }));
+  };
+  closeModal = () => {
+    this.setState(() => ({
+      isModalOpen: false,
+      productData: null,
     }));
   };
   render() {
     return (
       <div className="App">
-        <Header handleModal={this.handleModalOpen}/>
+        <Header handleModal={this.handleModalOpen} />
         <Hero />
-        <Products data={data } />
+        <Products
+          data={data}
+          handleModal={this.handleModalOpen}
+          selectedProduct={this.selectedProduct}
+        />
         {this.state.isModalOpen && (
-          <ModalBase data={data} handleModal={this.handleModalOpen} />
+          <ModalBase
+            data={data}
+            handleModal={this.handleModalOpen}
+            productData={this.state.productData}
+            closeModal={this.closeModal}
+          />
         )}
       </div>
     );

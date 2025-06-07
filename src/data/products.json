@@ -4,20 +4,62 @@
     "title": "ice cream",
     "description": "Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer",
     "image": "/images/products/ice.png",
-    "variant": "#AEC6A5"
+    "variant": "#AEC6A5",
+    "shadowVariant": "#9CBE8F",
+    "ingredients": [
+      { "name": "milk", "amount_g": "100ml" },
+      { "name": "belgian chocolate", "amount_g": "50g" },
+      { "name": "cream", "amount_g": "30ml" },
+      { "name": "sugar", "amount_g": "20g" },
+      { "name": "vanilla sugar", "amount_g": "5g" }
+    ],
+    "macronutrients": [
+      { "name": "kcal", "amount_g": 280 },
+      { "name": "protein", "amount_g": "4.2g" },
+      { "name": "fats", "amount_g": "18.5g" },
+      { "name": "carbs", "amount_g": "24.3g" }
+    ]
   },
   {
     "id": 2,
     "title": "ice coffee",
     "description": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
     "image": "/images/products/coffee.png",
-    "variant": "#EFD478"
+    "variant": "#EFD478",
+    "shadowVariant": "#ffe083",
+    "ingredients": [
+      { "name": "milk", "amount_g": "120ml" },
+      { "name": "cocoa powder", "amount_g": "15g" },
+      { "name": "sugar", "amount_g": "25g" },
+      { "name": "vanilla sugar", "amount_g": "5g" }
+    ],
+    "macronutrients": [
+      { "name": "kcal", "amount_g": 150 },
+      { "name": "protein", "amount_g": "3.1g" },
+      { "name": "fats", "amount_g": "4.8g" },
+      { "name": "carbs", "amount_g": "22.6g"}
+    ]
   },
   {
     "id": 3,
     "title": "milkshakes",
     "description": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
     "image": "/images/products/milkshake.png",
-    "variant": "#D6936D"
+    "variant": "#D6936D",
+    "shadowVariant": "#D5753F",
+
+    "ingredients": [
+      { "name": "cream", "amount_g": "60ml" },
+      { "name": "belgian chocolate", "amount_g": "40g"},
+      { "name": "cocoa powder", "amount_g": "10g" },
+      { "name": "sugar", "amount_g": "25g" },
+      { "name": "vanilla sugar", "amount_g": "5g" }
+    ],
+    "macronutrients": [
+      { "name": "kcal", "amount_g": 320 },
+      { "name": "protein", "amount_g": "3.5g" },
+      { "name": "fats", "amount_g": "22.0g" },
+      { "name": "carbs", "amount_g": "27.5g"}
+    ]
   }
 ]

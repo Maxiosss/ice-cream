@@ -165,7 +165,7 @@ class ModalBase extends Component {
           <button className={styles.closeBtn} onClick={this.closeModal}>
             <img
               className={styles.close}
-              src="/images/vector.png"
+              src="./images/vector.png"
               alt="close"
             />
           </button>

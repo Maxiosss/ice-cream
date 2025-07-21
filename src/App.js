@@ -3,6 +3,7 @@ import Header from "./ui/sections/header/Header";
 import Hero from "./ui/sections/hero/Hero";
 import Products from "./ui/sections/products/Products";
 import ModalBase from "./ui/components/modal/ModalBase";
+import Choose from "./ui/components/choose/Choose";
 import data from "./data/products.json";
 import { Component } from "react";
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
             closeModal={this.closeModal}
           />
         )}
+        <Choose></Choose>
       </div>
     );
   }

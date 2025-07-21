@@ -1,0 +1,43 @@
+{"products": [
+  {
+    "category": "ice-cream",
+    "colors": ["#AEC6A5", "#F9D4D4"],
+    "description": "Soft and creamy vanilla delight with a hint of caramel.",
+    "id": "ice-1",
+    "image": "/images/ice-cream-vanilla.png",
+    "title": "Ice Cream"
+  },
+  {
+    "category": "ice-coffee",
+    "colors": ["#C7A17A", "#EFD9C1"],
+    "description": "Refreshing blend of coffee and milk, served cold.",
+    "id": "ice-2",
+    "image": "/images/ice-coffee.png",
+    "title": "Ice Coffee"
+  },
+  {
+    "category": "milkshake",
+    "colors": ["#F5A6C7", "#FFD1DC"],
+    "description": "Strawberry milkshake with fresh berries and whipped cream.",
+    "id": "ice-3",
+    "image": "/images/milkshake-strawberry.png",
+    "title": "Milkshake"
+  },
+  {
+    "category": "ice-cream",
+    "colors": ["#8B5E3C", "#D2B48C"],
+    "description": "Rich dark chocolate flavor with crispy nuts.",
+    "id": "ice-4",
+    "image": "/images/ice-cream-chocolate.png",
+    "title": "Chocolate Ice Cream"
+  },
+  {
+    "category": "ice-cream",
+    "colors": ["#B7D7A8", "#DFF2D8"],
+    "description": "Japanese matcha ice cream with earthy green tea notes.",
+    "id": "ice-5",
+    "image": "/images/ice-cream-matcha.png",
+    "title": "Matcha Ice Cream"
+  }
+]
+}
